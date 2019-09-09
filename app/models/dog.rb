@@ -7,10 +7,15 @@ class Dog
     @name = name 
     @breed = breed
     @age = age 
+    self.save
   end
   
   def self.all 
     @@dogs
+  end
+  
+  def self.save 
+    @@dogs << self 
   end
   
   
